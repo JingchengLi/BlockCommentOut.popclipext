@@ -6,13 +6,13 @@
 	<array>
 		<dict>
 			<key>After</key>
-      <string>paste-result</string>
+                            <string>preview-result</string>
 			<key>Image File</key>
 			<string>block_commentout.png</string>
 			<key>Script Interpreter</key>
 			<string>/bin/bash</string>
 			<key>Shell Script File</key>
-			<string>block_commentout.sh</string>
+			<string>block_commentout_new.sh</string>
 			<key>Title</key>
 			<string>BlockCommentOut</string>
 		</dict>
