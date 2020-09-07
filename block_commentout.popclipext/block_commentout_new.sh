@@ -27,8 +27,8 @@
 COPY_TEXT="$POPCLIP_TEXT"
 CLIPBORAD_TEXT=$(echo "$COPY_TEXT" | awk 'BEGIN{RS="\n";start=0;end=0;content="";} {
 if (end == 1) next;
-if (/^[ \b\t\r]*\/\*/) {
-   sub(/^[ \b\t\r]*\/\*/,"");
+if (start == 0 && /^[ \b\t\r]*\/\*/) {
+   sub(/^[ \b\t\r]*\/\**/,"");
    sub(/\n/," ");
    content=$0;
    start=1;
